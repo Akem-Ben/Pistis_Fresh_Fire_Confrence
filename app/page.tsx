@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Hero } from './components/Hero';
-import { VideoPlayer } from './components/VideoPlayer';
+import { Hero } from './components/home/Hero';
+import { VideoPlayer } from './components/home/VideoPlayer';
+import { SpeakersSection } from './components/home/Speakers';
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
             </div>
     <Hero />
     <VideoPlayer />
+    <SpeakersSection />
     </div>
   );
 }
