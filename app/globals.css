@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 body {
-    background-color: #361D68;
+    background-image: url('/hero/firestorm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

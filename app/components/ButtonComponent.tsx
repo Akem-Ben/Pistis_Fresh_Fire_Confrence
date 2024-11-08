@@ -13,22 +13,21 @@ interface ButtonComponentProps {
 const ButtonComponent: React.FC<ButtonComponentProps> = ({
     text,
     buttonColor = 'bg-white',
-    backgroundColor = 'bg-pink-500',
+    backgroundColor = 'bg-[#]',
     textColor = 'text-pink-500',
-    buttonWidth = 'w-[174px]',
+    buttonWidth = 'w-[140px]',
     buttonHeight = 'h-[56px]',
     onClick,
 }) => {
     return (
-        <div className="relative hover:scale-[1.1] transition-all">
+        <div className={`hover:scale-[1.1] transition-all hover:bg-transparent hover:color-[white] hover:border hover:border-${buttonColor} bg-${buttonColor} rounded-lg`}>
             <button 
-                className={`absolute px-[3.5rem] w-[174px] h-[56px] py-4 ${textColor} ${buttonColor} rounded font-semibold top-0`}
+                className={`px-[3.5rem] w-[140px] h-[56px] py-4 ${textColor} flex text-center items-center justify-center font-semibold`}
                 onClick={onClick}
             >
                 {text}
             </button>
-            <div className={`${backgroundColor} ${buttonHeight} ${buttonWidth} rounded mt-[0.3rem] ml-[0.40rem]`}></div>
-        </div>
+       </div>
     );
 };
 

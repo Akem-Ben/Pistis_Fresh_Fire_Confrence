@@ -7,10 +7,10 @@ export const Hero = () => {
 
 
     return (
-        <section className="relative w-full h-full">
-            <div className="absolute inset-0 bg-[url('/hero/firestorm.png')] bg-cover bg-center">
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-            </div>
+        <section className="">
+            {/* <div className="absolute inset-0">
+                <div className="absolute inset-0 bg-[black] opacity-20"></div>
+            </div> */}
             <div className="relative z-10 text-white p-8 flex flex-col justify-center items-center gap-4">
                 <Countdown targetDate={targetDate} /> <span className="font-serif text-[40px] italic font-bold flex flex-col justify-center items-center">TO</span>
             <div className="font-serif text-[70px] animate__animated animate__pulse animate__infinite italic font-bold flex flex-col justify-center items-center">
@@ -20,3 +20,5 @@ export const Hero = () => {
         </section>
     )
 }
+
+//  bg-[url('/hero/firestorm.png')] bg-cover bg-center

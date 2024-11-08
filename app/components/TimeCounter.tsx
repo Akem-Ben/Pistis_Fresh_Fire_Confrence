@@ -35,19 +35,19 @@ const Countdown = ({ targetDate }: any) => {
     return (
         <div className="text-center flex justify-center gap-3">
             <div className='border rounded-lg'>
-                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#E151AE]'>{timeLeft.days || 0}</span>
+                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#8B0000]'>{timeLeft.days || 0}</span>
                 <p className='p-2 font-bold text-2xl border-none rounded-b-lg bg-white text-[#00163F]'>Days</p>
             </div> 
             <div>
-                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#E151AE]'>{timeLeft.hours || 0}</span>
+                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#8B0000]'>{timeLeft.hours || 0}</span>
                 <p className='p-2 font-bold text-2xl border-none rounded-b-lg bg-white text-[#00163F]'>Hours</p>
             </div> 
             <div>
-                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#E151AE]'>{timeLeft.minutes || 0}</span>
+                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#8B0000]'>{timeLeft.minutes || 0}</span>
                 <p className='p-2 font-bold text-2xl border-none rounded-b-lg bg-white text-[#00163F]'>Mins</p>
             </div> 
             <div>
-                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#E151AE]'>{timeLeft.seconds || 0}</span>
+                <span className='border-b block p-2 rounded-t-lg font-bold text-2xl bg-[#8B0000]'>{timeLeft.seconds || 0}</span>
                 <p className='p-2 font-bold text-2xl border-none rounded-b-lg bg-white text-[#00163F]'>Secs</p>
             </div>
         </div>
